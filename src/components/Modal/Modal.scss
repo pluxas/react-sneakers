@@ -10,6 +10,7 @@
     justify-content: end;
     transform: translateX(100%);
     transition: 0.5s ease-in-out;
+    z-index: 99;
 
     &.active {
         transform: translateY(0);
