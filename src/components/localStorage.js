@@ -1,6 +1,7 @@
 export const getTodos = () => {
     const todos = localStorage.getItem('cart')
     // TODO Json.parse() = приобразует строку в объект
+    // TODO Json.stringify() = приобразует объект в строку
     if(todos) {
         return JSON.parse(todos)
     }else {

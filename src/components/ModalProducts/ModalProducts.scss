@@ -53,3 +53,37 @@
         }
     }
 }
+
+.reviews {
+    font-weight: 700;
+    font-size: 50px;
+    color: #1c5632;
+
+    &__block {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        h1 {
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+}
+
+.reviews2 {
+    color: #e66d26;
+}
+.reviews3 {
+    color: #ffc79b;
+}
+.reviews4 {
+    color: #7166a7;
+}   

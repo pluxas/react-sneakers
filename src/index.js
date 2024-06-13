@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
 import App from "./App";
@@ -11,7 +11,9 @@ root.render(
   <React.StrictMode>
     <Router>
       <Provider store={store}>
-        <App />
+        <Suspense fallback={<h1>Loading...</h1>}>
+          <App/>
+        </Suspense>
       </Provider>
     </Router>
   </React.StrictMode>
