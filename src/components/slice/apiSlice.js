@@ -7,7 +7,6 @@ export const fetchData = createAsyncThunk(
         const comments = await fetch('https://jsonplaceholder.typicode.com/comments?_limit=10')
 
         const data = await comments.json()
-        console.log(JSON.stringify(data));
         return data 
     }
 )
