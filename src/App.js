@@ -48,6 +48,8 @@ function App() {
     setModal(false);
   };
 
+  
+
   return (
     <div className="container">
       <Header openModal={openModal} />
@@ -64,6 +66,7 @@ function App() {
           <Route path="/authorization" element={<HomePage/>}/>
           <Route path="login" element={<LoginPage />} />
           <Route path="/registration" element={<RegisterPage />} />
+          {/* <Route path="/Мужские Кроссовки Nike Blazer Mid Suede" element={<Third/>}/> */}
         </Routes>
       </div>
       <Modal closeModal={closeModal} modal={modal} />

@@ -19,8 +19,9 @@ const Login = () => {
                 id: user.uid,
             }))
             push('/profile')
+            console.log(user);
         })
-        .catch(console.error)
+        .catch(console.error)   
     }
 
     return (

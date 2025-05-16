@@ -1,13 +1,13 @@
 import React from 'react'
 
-import first from '../../assets/images/1.png'
-import Products from '../../products'
-import './ModalProducts.scss'
 import { useDispatch, useSelector } from 'react-redux'
 import { addProduct } from '../slice/productSlice'
-import GlobalSvgIcons from '../../assets/icons/GlobalSvgIcons'
 import { NavLink } from 'react-router-dom'
+import './ModalProducts.scss'
 import Loading from '../Loading'
+import GlobalSvgIcons from '../../assets/icons/GlobalSvgIcons'
+import Products from '../../products'
+import first from '../../assets/images/1.png'
 
 
 const First = () => {

@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { addFavoriteProducts, addProduct } from '../../slice/productSlice'
-import GlobalSvgIcons from '../../../assets/icons/GlobalSvgIcons'
 import { NavLink } from 'react-router-dom'
+// import { useAuth } from '../../../hooks/use-auth'
+// import { useNavigate } from 'react-router-dom'
+import GlobalSvgIcons from '../../../assets/icons/GlobalSvgIcons'
 
 const Card = ({ products }) => {
-    const product = useSelector(state => state.cart.product)
+    // const product = useSelector(state => state.cart.product)
     const dispatch = useDispatch()
     const [isAdded, setIsAdded] = useState(false)
     const [isAdd, setIsAdd] = useState(false)
+    // const { isAuth } = useAuth()
+    // const push = useNavigate()
 
     const onClickPlus = () => {
         setIsAdded(true)
@@ -20,6 +24,10 @@ const Card = ({ products }) => {
     }
 
     const addedProduct = (product) => {
+        // if (isAuth) {
+        // }else {
+        //     push('/authorization')
+        // }
         dispatch(addProduct(product))
     }
 
